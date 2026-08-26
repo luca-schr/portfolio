@@ -1,0 +1,14 @@
+{
+    "HomePage": {
+        "title": "Salut tout le monde !"
+    },
+    "AboutPage": {
+        "title": "À propos"
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ContactPage": {
+        "title": "Contact"
+    }
+}

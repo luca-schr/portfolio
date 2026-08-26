@@ -1,0 +1,14 @@
+{
+    "HomePage": {
+        "title": "Hello guys!"
+    },
+    "AboutPage": {
+        "title": "About"
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ContactPage": {
+        "title": "Contact"
+    }
+}
