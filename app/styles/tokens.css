@@ -1,0 +1,21 @@
+:root {
+    --palette-brand-500: #0077FF;
+    --palette-ink-50: #f8f8f8;
+    --palette-ink-950: #313131;
+
+    --background: var(--palette-ink-50);
+    --foreground: var(--palette-ink-950);
+    --primary: var(--palette-brand-500);
+    --primary-foreground: #ffffff;
+    --muted: #e8eaef;
+    --border: #d5d8e0;
+}
+
+.dark {
+    --background: var(--palette-ink-950);
+    --foreground: var(--palette-ink-50);
+    --primary: var(--palette-brand-500);
+    --primary-foreground: #ffffff;
+    --muted: #1c1f28;
+    --border: #2a2e3a;
+}
