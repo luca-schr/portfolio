@@ -8,4 +8,87 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-muted: var(--muted);
   --color-border: var(--border);
+
+  --text-display: var(--type-display-size);
+  --text-display--line-height: var(--type-display-leading);
+  --text-title: var(--type-title-size);
+  --text-title--line-height: var(--type-title-leading);
+  --text-heading: var(--type-heading-size);
+  --text-heading--line-height: var(--type-heading-leading);
+  --text-subheading: var(--type-subheading-size);
+  --text-subheading--line-height: var(--type-subheading-leading);
+  --text-body: var(--type-body-size);
+  --text-body--line-height: var(--type-body-leading);
+  --text-caption: var(--type-caption-size);
+  --text-caption--line-height: var(--type-caption-leading);
+
+  --spacing-gutter: var(--space-gutter);
+  --spacing-section: var(--space-section);
+  --spacing-stack: var(--space-stack);
+  --spacing-stack-lg: var(--space-stack-lg);
+
+  --container-prose: var(--layout-prose);
+  --container-content: var(--layout-content);
+  --container-wide: var(--layout-wide);
+
+  --font-sans: var(--font-family-sans);
+}
+
+@utility type-display {
+  font-size: var(--type-display-size);
+  line-height: var(--type-display-leading);
+  font-weight: var(--type-display-weight);
+}
+
+@utility type-title {
+  font-size: var(--type-title-size);
+  line-height: var(--type-title-leading);
+  font-weight: var(--type-title-weight);
+}
+
+@utility type-heading {
+  font-size: var(--type-heading-size);
+  line-height: var(--type-heading-leading);
+  font-weight: var(--type-heading-weight);
+}
+
+@utility type-subheading {
+  font-size: var(--type-subheading-size);
+  line-height: var(--type-subheading-leading);
+  font-weight: var(--type-subheading-weight);
+}
+
+@utility type-body {
+  font-size: var(--type-body-size);
+  line-height: var(--type-body-leading);
+  font-weight: var(--type-body-weight);
+}
+
+@utility type-caption {
+  font-size: var(--type-caption-size);
+  line-height: var(--type-caption-leading);
+  font-weight: var(--type-caption-weight);
+}
+
+@utility layout-page {
+  width: 100%;
+  max-width: var(--layout-wide);
+  margin-inline: auto;
+  padding-inline: var(--space-gutter);
+}
+
+@utility layout-prose {
+  width: 100%;
+  max-width: var(--layout-prose);
+  margin-inline: auto;
+}
+
+@utility layout-content {
+  width: 100%;
+  max-width: var(--layout-content);
+  margin-inline: auto;
+}
+
+@utility section-y {
+  padding-block: var(--space-section);
 }

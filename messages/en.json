@@ -1,14 +1,40 @@
 {
+    "Metadata": {
+        "title": "Lucas Schrever • Web Developer",
+        "titleTemplate": "%s • Lucas Schrever",
+        "description": "I build the digital project from task definition through to going live: code, CMS, UX/UI, SEO, and CI/CD."
+    },
     "HomePage": {
-        "title": "Hello guys!"
+        "title": "Home",
+        "metadata": {
+            "title": "Home",
+            "description": "I build the digital project from task definition through to going live: code, CMS, UX/UI, SEO, and CI/CD."
+        },
+        "hero": {
+            "name": "Lucas Schrever",
+            "profile": "Web Developer & Product Manager",
+            "description": "I build the digital project from task definition through to going live: code, CMS, UX/UI, SEO, and CI/CD."
+        }
     },
     "AboutPage": {
-        "title": "About"
+        "title": "About",
+        "metadata": {
+            "title": "About",
+            "description": "Background, how I work, and what I build."
+        }
     },
     "BlogPage": {
-        "title": "Blog"
+        "title": "Blog",
+        "metadata": {
+            "title": "Blog",
+            "description": "Notes on web development, product, and shipping digital projects."
+        }
     },
     "ContactPage": {
-        "title": "Contact"
+        "title": "Contact",
+        "metadata": {
+            "title": "Contact",
+            "description": "A project or a question. Write to me."
+        }
     }
 }

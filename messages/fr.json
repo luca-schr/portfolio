@@ -1,14 +1,40 @@
 {
+    "Metadata": {
+        "title": "Lucas Schrever • Développeur web",
+        "titleTemplate": "%s • Lucas Schrever",
+        "description": "Je construis le projet digital, de la définition des tâches jusqu’au déploiement en ligne : code, CMS, UX/UI, SEO et CI/CD."
+    },
     "HomePage": {
-        "title": "Salut tout le monde !"
+        "title": "Accueil",
+        "metadata": {
+            "title": "Accueil",
+            "description": "Je construis le projet digital, de la définition des tâches jusqu’au déploiement en ligne : code, CMS, UX/UI, SEO et CI/CD."
+        },
+        "hero": {
+            "name": "Lucas Schrever",
+            "profile": "Développeur web & Product Manager",
+            "description": "Je construis le projet digital, de la définition des tâches jusqu’au déploiement en ligne : code, CMS, UX/UI, SEO et CI/CD."
+        }
     },
     "AboutPage": {
-        "title": "À propos"
+        "title": "À propos",
+        "metadata": {
+            "title": "À propos",
+            "description": "Je présente mon parcours, ma façon de travailler et ce que je construis."
+        }
     },
     "BlogPage": {
-        "title": "Blog"
+        "title": "Blog",
+        "metadata": {
+            "title": "Blog",
+            "description": "Notes sur le développement web, le produit et la mise en ligne de projets digitaux."
+        }
     },
     "ContactPage": {
-        "title": "Contact"
+        "title": "Contact",
+        "metadata": {
+            "title": "Contact",
+            "description": "Un projet, une question : écris-moi pour en parler."
+        }
     }
 }
