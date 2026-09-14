@@ -23,9 +23,8 @@ export default function HomePage() {
           width: 3168,
           height: 4752,
         }}
-        gap="stack-lg"
       />
-      <p className="section-y max-w-prose">{t('hero.description')}</p>
+      <p className="mt-space max-w-prose">{t('hero.description')}</p>
     </>
   );
 }

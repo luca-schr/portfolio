@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import "./styles/tokens.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -10,6 +12,7 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-link-hover: var(--link-hover);
 
   --text-display: var(--type-display-size);
   --text-display--line-height: var(--type-display-leading);
@@ -24,13 +27,9 @@
   --text-caption: var(--type-caption-size);
   --text-caption--line-height: var(--type-caption-leading);
 
-  --spacing-gutter: var(--space-gutter);
-  --spacing-section: var(--space-section);
-  --spacing-stack: var(--space-stack);
-  --spacing-stack-lg: var(--space-stack-lg);
+  --spacing-space: var(--space);
 
-  --container-prose: var(--layout-prose);
-  --container-content: var(--layout-content);
+  --container-prose: var(--width-prose);
   --container-wide: var(--layout-wide);
 
   --font-sans: var(--font-family-sans);
@@ -76,23 +75,7 @@
   width: 100%;
   max-width: var(--layout-wide);
   margin-inline: auto;
-  padding-inline: var(--space-gutter);
-}
-
-@utility layout-prose {
-  width: 100%;
-  max-width: var(--layout-prose);
-  margin-inline: auto;
-}
-
-@utility layout-content {
-  width: 100%;
-  max-width: var(--layout-content);
-  margin-inline: auto;
-}
-
-@utility section-y {
-  padding-block: var(--space-section);
+  padding-inline: var(--space);
 }
 
 @utility bg-brand {

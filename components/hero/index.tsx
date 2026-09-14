@@ -4,17 +4,11 @@ import { clsx } from 'clsx';
 import { Button, type ButtonProps } from '@/components/button';
 import { Heading, type HeadingProps } from '@/components/heading';
 
-const gapClass = {
-  stack: 'gap-stack',
-  'stack-lg': 'gap-stack-lg',
-} as const;
-
 const imageFitClass = {
   classic: 'h-auto max-h-dvh w-full max-w-md object-contain',
   cover: 'object-cover',
 } as const;
 
-export type HeroGap = keyof typeof gapClass;
 export type HeroImageFit = keyof typeof imageFitClass;
 
 type HeroImage = Pick<
@@ -28,7 +22,7 @@ export type HeroProps = {
   heading: HeadingProps;
   buttons?: ButtonProps[];
   image: HeroImage;
-  gap?: HeroGap;
+  gap?: boolean;
   fullHeight?: boolean;
   className?: string;
 };
@@ -37,7 +31,7 @@ export function Hero({
   heading,
   buttons,
   image,
-  gap = 'stack',
+  gap = true,
   fullHeight = true,
   className,
 }: HeroProps) {
@@ -77,12 +71,12 @@ export function Hero({
     <section
       className={clsx(
         'grid grid-cols-1 items-center md:grid-cols-2',
-        fullHeight && 'min-h-dvh',
-        gapClass[gap],
+        fullHeight && 'md:min-h-dvh',
+        gap && 'gap-space',
         className
       )}
     >
-      <div className="flex flex-col gap-stack">
+      <div className="flex flex-col gap-4">
         <Heading {...heading} />
         {buttons && buttons.length > 0 ? (
           <div className="flex flex-wrap gap-4">

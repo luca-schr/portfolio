@@ -18,6 +18,19 @@
             "ctaSecondary": "À propos"
         }
     },
+    "Nav": {
+        "menu": "Menu",
+        "close": "Fermer le menu",
+        "logo": "Logo pro",
+        "home": "Accueil",
+        "about": "À propos",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "AsideMenu": {
+        "theme": "Mode clair / sombre",
+        "language": "Langue"
+    },
     "AboutPage": {
         "title": "À propos",
         "metadata": {

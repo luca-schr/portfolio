@@ -18,6 +18,19 @@
             "ctaSecondary": "About"
         }
     },
+    "Nav": {
+        "menu": "Menu",
+        "close": "Close menu",
+        "logo": "Pro logo",
+        "home": "Home",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact"
+    },
+    "AsideMenu": {
+        "theme": "Light / Dark mode",
+        "language": "Language"
+    },
     "AboutPage": {
         "title": "About",
         "metadata": {

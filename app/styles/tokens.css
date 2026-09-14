@@ -12,6 +12,7 @@
     --accent-foreground: var(--palette-ink-950);
     --muted: #e7f1f8;
     --border: #c5d6e6;
+    --link-hover: var(--palette-brand-500);
 
     --gradient-brand: linear-gradient(
         135deg,
@@ -60,27 +61,11 @@
 
     --font-family-sans: Candara, Calibri, "Segoe UI", sans-serif;
 
-    --space-2: 0.5rem;
-    --space-3: 0.75rem;
-    --space-4: 1rem;
-    --space-6: 1.5rem;
-    --space-8: 2rem;
-    --space-12: 3rem;
-    --space-16: 4rem;
-    --space-24: 6rem;
-
+    --space: clamp(2.5rem, 8vw, 4rem);
     --width-prose: 48rem;
-    --width-content: 72rem;
-    --width-wide: 80rem;
+    --layout-wide: 80rem;
 
-    --space-gutter: clamp(1.5rem, 4vw, 2.5rem);
-    --space-section: clamp(4rem, 10vw, 6rem);
-    --space-stack: var(--space-6);
-    --space-stack-lg: var(--space-12);
-
-    --layout-prose: var(--width-prose);
-    --layout-content: var(--width-content);
-    --layout-wide: var(--width-wide);
+    color-scheme: light;
 }
 
 .dark {
@@ -92,4 +77,6 @@
     --accent-foreground: var(--palette-ink-950);
     --muted: #1a2430;
     --border: #2a3a4a;
+
+    color-scheme: dark;
 }
