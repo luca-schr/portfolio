@@ -1,6 +1,11 @@
-import {useTranslations} from 'next-intl';
+import { Heading } from '@/components/heading';
+import { useTranslations } from 'next-intl';
 
 export default function BlogPage() {
   const t = useTranslations('BlogPage');
-  return <h1 className="type-display">{t('title')}</h1>;
+  return (
+    <div className="section-y">
+      <Heading h={1} title={t('title')} />
+    </div>
+  );
 }

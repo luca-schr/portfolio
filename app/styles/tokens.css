@@ -1,5 +1,6 @@
 :root {
-    --palette-brand-500: #0077FF;
+    --palette-brand-500: #008CFF;
+    --palette-brand-300: #5EF0FF;
     --palette-ink-50: #f8f8f8;
     --palette-ink-950: #313131;
 
@@ -7,8 +8,16 @@
     --foreground: var(--palette-ink-950);
     --primary: var(--palette-brand-500);
     --primary-foreground: #ffffff;
-    --muted: #e8eaef;
-    --border: #d5d8e0;
+    --accent: var(--palette-brand-300);
+    --accent-foreground: var(--palette-ink-950);
+    --muted: #e7f1f8;
+    --border: #c5d6e6;
+
+    --gradient-brand: linear-gradient(
+        135deg,
+        var(--primary) 0%,
+        var(--accent) 100%
+    );
 
     --type-size-xs: 0.875rem;
     --type-size-sm: 1rem;
@@ -79,6 +88,8 @@
     --foreground: var(--palette-ink-50);
     --primary: var(--palette-brand-500);
     --primary-foreground: #ffffff;
-    --muted: #1c1f28;
-    --border: #2a2e3a;
+    --accent: var(--palette-brand-300);
+    --accent-foreground: var(--palette-ink-950);
+    --muted: #1a2430;
+    --border: #2a3a4a;
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="Logo perso">
+  <defs>
+    <linearGradient id="mark" x1="16" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001FC2"/>
+      <stop offset="1" stop-color="#A200FF"/>
+    </linearGradient>
+    <mask id="cut">
+      <rect width="100" height="100" fill="#fff"/>
+      <path
+        d="M35 28 16 40l19 12"
+        stroke="#000"
+        stroke-width="9.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </mask>
+  </defs>
+  <path
+    fill="url(#mark)"
+    mask="url(#cut)"
+    d="M16 0h18a16 16 0 0 1 16 16v36a16 16 0 0 0 16 16h18a16 16 0 0 1 16 16 16 16 0 0 1-16 16H16A16 16 0 0 1 0 84V16A16 16 0 0 1 16 0Z"
+  />
+  <path
+    d="M65 28 84 40 65 52"
+    stroke="#A200FF"
+    stroke-width="9.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

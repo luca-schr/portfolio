@@ -13,7 +13,9 @@
         "hero": {
             "name": "Lucas Schrever",
             "profile": "Développeur web & Product Manager",
-            "description": "Je construis le projet digital, de la définition des tâches jusqu’au déploiement en ligne : code, CMS, UX/UI, SEO et CI/CD."
+            "description": "Je construis le projet digital, de la définition des tâches jusqu’au déploiement en ligne : code, CMS, UX/UI, SEO et CI/CD.",
+            "cta": "Me contacter",
+            "ctaSecondary": "À propos"
         }
     },
     "AboutPage": {

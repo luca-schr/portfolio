@@ -44,7 +44,9 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className="bg-background text-foreground type-body font-sans">
         <NextIntlClientProvider>
-          <main className="layout-page">{children}</main>
+          <main className="layout-page">
+            <div className="layout-content">{children}</div>
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
