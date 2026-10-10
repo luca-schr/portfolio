@@ -12,10 +12,33 @@
         },
         "hero": {
             "name": "Lucas Schrever",
-            "profile": "Développeur web & Product Manager",
+            "profile": "Développeur web & Chef de projet digital",
             "description": "Je construis le projet digital, de la définition des tâches jusqu’au déploiement en ligne : code, CMS, UX/UI, SEO et CI/CD.",
             "cta": "Me contacter",
             "ctaSecondary": "À propos"
+        },
+        "introduction": {
+            "title": "Introduction",
+            "description": "Je clarifie le besoin, priorise, livre puis mets en ligne",
+            "body": "Je suis acteur dans l’accompagnement des produits digitaux/applicatifs/logiciels, du cadrage jusqu’au déploiement en ligne. Mon rôle peut être concepteur, manager et chef de projet pour relier le produit, le design et le code."
+        },
+        "services": {
+            "title": "Services",
+            "description": "Voici mon périmètre d’activité",
+            "items": {
+                "frontend": "Développeur front-end",
+                "fullstack": "Développeur fullstack",
+                "webmaster": "Webmaster",
+                "seo": "Consultant SEO",
+                "pm": "Chef de projet",
+                "po": "Product owner",
+                "ux": "Designer UX/UI",
+                "analyst": "Web analyst"
+            }
+        },
+        "work": {
+            "title": "Réalisations",
+            "body": "Sites vitrines, outils internes et mises en ligne de produits digitaux. Chaque projet est traité comme un livrable : périmètre, qualité, et passage en ligne."
         }
     },
     "Nav": {

@@ -1,4 +1,6 @@
+import { Heading } from '@/components/heading';
 import { Hero } from '@/components/hero';
+import { ServiceGrid } from '@/components/service-grid';
 import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
@@ -24,7 +26,26 @@ export default function HomePage() {
           height: 4752,
         }}
       />
-      <p className="mt-space max-w-prose">{t('hero.description')}</p>
+      <section className="mt-space max-w-wide">
+        <Heading
+          h={2}
+          title={t('introduction.title')}
+          description={t('introduction.description')}
+        />
+        <p className="mt-4">{t('introduction.body')}</p>
+      </section>
+      <section className="mt-space max-w-wide">
+        <Heading
+          h={2}
+          title={t('services.title')}
+          description={t('services.description')}
+        />
+        <ServiceGrid items={t.raw('services.items')} />
+      </section>
+      <section className="mt-space max-w-wide">
+        <Heading h={2} title={t('work.title')} />
+        <p className="mt-4">{t('work.body')}</p>
+      </section>
     </>
   );
 }

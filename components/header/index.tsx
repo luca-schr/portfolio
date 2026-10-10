@@ -116,7 +116,7 @@ export function Header() {
         <header
           id="site-menu"
           className={clsx(
-            'fixed top-0 z-20 flex h-dvh w-[12.5rem] flex-col bg-background duration-300 ease-out md:pt-20 md:pb-5',
+            'fixed top-0 z-20 flex h-dvh w-full flex-col bg-background duration-300 ease-out md:w-[12.5rem] md:pt-20 md:pb-5',
             'transition-[left]',
             open ? 'left-0' : 'left-[-100%]'
           )}
@@ -126,10 +126,10 @@ export function Header() {
             alt={t('logo')}
             width={100}
             height={100}
-            className="absolute top-5 left-2 h-auto w-16 md:static md:order-last md:mt-auto md:ml-5"
+            className="absolute top-5 left-1/2 h-auto w-16 -translate-x-1/2 md:static md:order-last md:mt-auto md:ml-5 md:translate-x-0"
           />
           <nav
-            className="flex min-h-0 w-full flex-1 flex-col items-stretch justify-center md:justify-start"
+            className="flex min-h-0 w-full flex-1 flex-col items-center justify-center md:items-stretch md:justify-start"
             aria-label={t('menu')}
           >
             <ul className="flex w-full flex-col">
@@ -147,7 +147,7 @@ export function Header() {
                         event.currentTarget.blur();
                       }}
                       className={clsx(
-                        'flex w-full cursor-pointer items-center px-2 py-1 type-body whitespace-nowrap text-foreground hover:text-link-hover md:px-5',
+                        'flex w-full cursor-pointer items-center justify-center px-2 py-1 type-body whitespace-nowrap text-foreground hover:text-link-hover md:justify-start md:px-5',
                         current && 'text-link-hover'
                       )}
                     >

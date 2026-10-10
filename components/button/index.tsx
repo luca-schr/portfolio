@@ -11,7 +11,7 @@ const variants = {
 } as const;
 
 const baseClassName =
-  'inline-flex items-center justify-center px-4 py-2 type-body rounded-md font-medium transition-[filter,background-color] disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
+  'inline-flex items-center justify-center px-4 py-2 type-body rounded-md transition-[filter,background-color] disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
 
 export type ButtonVariant = keyof typeof variants;
 

@@ -12,10 +12,33 @@
         },
         "hero": {
             "name": "Lucas Schrever",
-            "profile": "Web Developer & Product Manager",
+            "profile": "Web Developer & Digital Project Manager",
             "description": "I build the digital project from task definition through to going live: code, CMS, UX/UI, SEO, and CI/CD.",
             "cta": "Get in touch",
             "ctaSecondary": "About"
+        },
+        "introduction": {
+            "title": "Introduction",
+            "description": "I clarify the need, prioritize, ship, then take it live",
+            "body": "I take part in supporting digital, application, and software products, from framing through to going live. The role can be designer, manager, and project lead, connecting product, design, and code."
+        },
+        "services": {
+            "title": "Services",
+            "description": "Here is my scope of work",
+            "items": {
+                "frontend": "Front-end developer",
+                "fullstack": "Full-stack developer",
+                "webmaster": "Webmaster",
+                "seo": "SEO consultant",
+                "pm": "Project manager",
+                "po": "Product owner",
+                "ux": "UX/UI designer",
+                "analyst": "Web analyst"
+            }
+        },
+        "work": {
+            "title": "Work",
+            "body": "Marketing sites, internal tools, and digital products taken live. Each project is treated as a delivery: scope, quality, and a real launch."
         }
     },
     "Nav": {

@@ -132,7 +132,7 @@ export function AsideMenu() {
         aria-label={t('language')}
       >
         <span
-          className="grid size-6 shrink-0 place-items-center type-caption font-semibold uppercase"
+          className="grid size-6 shrink-0 place-items-center type-caption uppercase"
           aria-hidden
         >
           {locale}
