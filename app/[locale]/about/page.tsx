@@ -1,7 +1,19 @@
-import { Heading } from '@/components/heading';
+import { HeroText } from '@/components/hero-text';
 import { useTranslations } from 'next-intl';
 
 export default function AboutPage() {
   const t = useTranslations('AboutPage');
-  return <Heading h={1} title={t('title')} />;
+
+  return (
+    <HeroText
+      heading={{
+        h: 1,
+        title: t('title'),
+      }}
+      image={{
+        src: '/images/bg-sample.jpg',
+        alt: t('title'),
+      }}
+    />
+  );
 }

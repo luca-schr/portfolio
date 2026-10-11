@@ -19,7 +19,7 @@ export default function HomePage() {
           { label: t('hero.ctaSecondary'), href: '/about', variant: 'secondary' },
         ]}
         image={{
-          src: '/photo-pro.jpg',
+          src: '/images/photo-pro.jpg',
           alt: t('hero.name'),
           fit: 'classic',
           width: 3168,
@@ -43,8 +43,11 @@ export default function HomePage() {
         <ServiceGrid items={t.raw('services.items')} />
       </section>
       <section className="mt-space max-w-wide">
-        <Heading h={2} title={t('work.title')} />
-        <p className="mt-4">{t('work.body')}</p>
+        <Heading
+          h={2}
+          title={t('work.title')}
+          description={t('work.description')}
+        />
       </section>
     </>
   );

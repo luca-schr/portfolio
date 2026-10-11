@@ -52,6 +52,7 @@ export function Hero({
           fill
           sizes="(max-width: 768px) 100vw, 28rem"
           preload
+          loading="eager"
           className={clsx(imageFitClass.cover, imageClassName)}
           {...imageProps}
         />
@@ -62,6 +63,7 @@ export function Hero({
         width={width}
         height={height}
         preload
+        loading="eager"
         className={clsx(imageFitClass.classic, imageClassName)}
         {...imageProps}
       />

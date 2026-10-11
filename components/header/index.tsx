@@ -54,8 +54,8 @@ export function Header() {
         className={clsx(
           'fixed inset-0 z-[15] cursor-pointer bg-foreground/20 transition-opacity duration-300 ease-out',
           open
-            ? 'opacity-100 delay-300'
-            : 'pointer-events-none opacity-0 delay-0'
+            ? 'opacity-100 delay-0'
+            : 'pointer-events-none opacity-0 delay-300'
         )}
         onClick={() => {
           hoverLocked.current = true;
@@ -118,7 +118,7 @@ export function Header() {
           className={clsx(
             'fixed top-0 z-20 flex h-dvh w-full flex-col bg-background duration-300 ease-out md:w-[12.5rem] md:pt-20 md:pb-5',
             'transition-[left]',
-            open ? 'left-0' : 'left-[-100%]'
+            open ? 'left-0 delay-300' : 'left-[-100%] delay-0'
           )}
         >
           <Image

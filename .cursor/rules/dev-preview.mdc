@@ -1,0 +1,10 @@
+---
+description: Do not start or preview the app in Cursor when the user already runs it in a browser
+alwaysApply: true
+---
+
+# Dev server and preview
+
+- Do not stop a running `npm run dev` / `next dev`.
+- Do not start `npm run dev` if it is already running.
+- Do not open or verify the app in the Cursor browser tab. The user already previews it in their own browser.
