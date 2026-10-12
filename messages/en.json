@@ -38,7 +38,7 @@
         },
         "work": {
             "title": "Work",
-            "description": "I have led several diverse projects through my training, professional experience, and personal time",
+            "description": "Company, training, and personal projects",
             "body": "Marketing sites, internal tools, and digital products taken live. Each project is treated as a delivery: scope, quality, and a real launch."
         }
     },
@@ -71,9 +71,35 @@
     },
     "ContactPage": {
         "title": "Contact",
+        "heading": {
+            "title": "My details",
+            "description": "I am available by phone, email, and on several platforms"
+        },
         "metadata": {
             "title": "Contact",
             "description": "A project or a question. Write to me."
+        },
+        "links": {
+            "phone": {
+                "label": "Phone",
+                "text": "+33 7 75 28 61 34",
+                "href": "tel:+33775286134"
+            },
+            "email": {
+                "label": "Email",
+                "text": "lucas.schrever@outlook.com",
+                "href": "mailto:lucas.schrever@outlook.com"
+            },
+            "linkedin": {
+                "label": "LinkedIn",
+                "text": "in/lucas-schrever",
+                "href": "https://www.linkedin.com/in/lucas-schrever/"
+            },
+            "github": {
+                "label": "GitHub",
+                "text": "luca-schr",
+                "href": "https://github.com/luca-schr/"
+            }
         }
     }
 }

@@ -38,7 +38,7 @@
         },
         "work": {
             "title": "Réalisations",
-            "description": "J’ai mené plusieurs projets divers au fil de ma formation, mes expériences professionnelles et mon temps personnel",
+            "description": "Projets d’entreprise, formation et personnels",
             "body": "Sites vitrines, outils internes et mises en ligne de produits digitaux. Chaque projet est traité comme un livrable : périmètre, qualité, et passage en ligne."
         }
     },
@@ -71,9 +71,35 @@
     },
     "ContactPage": {
         "title": "Contact",
+        "heading": {
+            "title": "Mes coordonnées",
+            "description": "Je suis disponible par téléphone, e-mail et sur plusieurs plateformes"
+        },
         "metadata": {
             "title": "Contact",
             "description": "Un projet, une question : écris-moi pour en parler."
+        },
+        "links": {
+            "phone": {
+                "label": "Téléphone",
+                "text": "+33 7 75 28 61 34",
+                "href": "tel:+33775286134"
+            },
+            "email": {
+                "label": "E-mail",
+                "text": "lucas.schrever@outlook.com",
+                "href": "mailto:lucas.schrever@outlook.com"
+            },
+            "linkedin": {
+                "label": "LinkedIn",
+                "text": "in/lucas-schrever",
+                "href": "https://www.linkedin.com/in/lucas-schrever/"
+            },
+            "github": {
+                "label": "GitHub",
+                "text": "luca-schr",
+                "href": "https://github.com/luca-schr/"
+            }
         }
     }
 }

@@ -31,6 +31,7 @@ export default function HomePage() {
           h={2}
           title={t('introduction.title')}
           description={t('introduction.description')}
+          textAlign="center"
         />
         <p className="mt-4">{t('introduction.body')}</p>
       </section>
@@ -39,6 +40,7 @@ export default function HomePage() {
           h={2}
           title={t('services.title')}
           description={t('services.description')}
+          textAlign="center"
         />
         <ServiceGrid items={t.raw('services.items')} />
       </section>
@@ -47,6 +49,7 @@ export default function HomePage() {
           h={2}
           title={t('work.title')}
           description={t('work.description')}
+          textAlign="center"
         />
       </section>
     </>

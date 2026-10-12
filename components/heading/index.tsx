@@ -17,25 +17,43 @@ const descriptionClass = {
 } as const;
 
 export type HeadingLevel = keyof typeof tags;
+export type HeadingAlign = 'left' | 'center' | 'right';
+
+const alignClass = {
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right',
+} as const;
 
 export type HeadingProps = {
   h: HeadingLevel;
   title: ReactNode;
   description?: ReactNode;
+  textAlign?: HeadingAlign;
   className?: string;
 };
 
-export function Heading({ h, title, description, className }: HeadingProps) {
+export function Heading({
+  h,
+  title,
+  description,
+  textAlign = 'left',
+  className,
+}: HeadingProps) {
   const Tag = tags[h];
 
-  const heading = <Tag className={clsx(titleClass[h], className)}>{title}</Tag>;
+  const heading = (
+    <Tag className={clsx(titleClass[h], alignClass[textAlign], className)}>
+      {title}
+    </Tag>
+  );
 
   if (description == null || description === false) {
     return heading;
   }
 
   return (
-    <div className="flex flex-col gap-[0.35em]">
+    <div className={clsx('flex flex-col gap-[0.35em]', alignClass[textAlign])}>
       {heading}
       <p className={descriptionClass[h]}>{description}</p>
     </div>

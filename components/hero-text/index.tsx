@@ -11,7 +11,7 @@ type Props = {
 
 export function HeroText({ heading, image }: Props) {
   return (
-    <section className="relative h-dvh w-full">
+    <section className="relative h-[50dvh] w-full">
       <Image
         src={image.src}
         alt={image.alt}

@@ -13,14 +13,15 @@ export function Header() {
   const t = useTranslations('Nav');
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const skipLock = useRef(true);
+  const previousPathname = useRef(pathname);
   const hoverLocked = useRef(false);
 
   useEffect(() => {
-    if (skipLock.current) {
-      skipLock.current = false;
+    if (previousPathname.current === pathname) {
       return;
     }
+
+    previousPathname.current = pathname;
     setOpen(false);
     hoverLocked.current = true;
     const active = document.activeElement;
@@ -116,7 +117,7 @@ export function Header() {
         <header
           id="site-menu"
           className={clsx(
-            'fixed top-0 z-20 flex h-dvh w-full flex-col bg-background duration-300 ease-out md:w-[12.5rem] md:pt-20 md:pb-5',
+            'fixed top-0 z-20 flex h-dvh w-full flex-col bg-background duration-300 ease-out md:w-[12.5rem] md:pb-5',
             'transition-[left]',
             open ? 'left-0 delay-300' : 'left-[-100%] delay-0'
           )}
@@ -129,7 +130,7 @@ export function Header() {
             className="absolute top-5 left-1/2 h-auto w-16 -translate-x-1/2 md:static md:order-last md:mt-auto md:ml-5 md:translate-x-0"
           />
           <nav
-            className="flex min-h-0 w-full flex-1 flex-col items-center justify-center md:items-stretch md:justify-start"
+            className="flex min-h-0 w-full flex-1 flex-col items-center justify-center md:items-stretch"
             aria-label={t('menu')}
           >
             <ul className="flex w-full flex-col">
