@@ -39,7 +39,14 @@
         "work": {
             "title": "Work",
             "description": "Company, training, and personal projects",
-            "body": "Marketing sites, internal tools, and digital products taken live. Each project is treated as a delivery: scope, quality, and a real launch."
+            "body": "Marketing sites, internal tools, and digital products taken live. Each project is treated as a delivery: scope, quality, and a real launch.",
+            "items": {
+                "jane-energie": "Website design for jane-energie.fr",
+                "jane-saas": "Improvements to Jane’s SaaS platform",
+                "shin-agency": "UX/UI redesign of shin-agency.com",
+                "js-lab": "Front-end integration of the JS Lab website",
+                "jobseka": "JobSeka: development of a custom Indeed-like platform"
+            }
         }
     },
     "Nav": {

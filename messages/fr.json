@@ -39,7 +39,14 @@
         "work": {
             "title": "Réalisations",
             "description": "Projets d’entreprise, formation et personnels",
-            "body": "Sites vitrines, outils internes et mises en ligne de produits digitaux. Chaque projet est traité comme un livrable : périmètre, qualité, et passage en ligne."
+            "body": "Sites vitrines, outils internes et mises en ligne de produits digitaux. Chaque projet est traité comme un livrable : périmètre, qualité, et passage en ligne.",
+            "items": {
+                "jane-energie": "Conception du site jane-energie.fr",
+                "jane-saas": "Amélioration de la plateforme SaaS de Jane",
+                "shin-agency": "Refonte UX/UI de shin-agency.com",
+                "js-lab": "Intégration front-end du site JS Lab",
+                "jobseka": "JobSeka : développement d’un Indeed-like personnalisé"
+            }
         }
     },
     "Nav": {

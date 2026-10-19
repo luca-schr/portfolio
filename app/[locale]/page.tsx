@@ -1,5 +1,6 @@
 import { Heading } from '@/components/heading';
 import { Hero } from '@/components/hero';
+import { ProjectGrid } from '@/components/project-grid';
 import { ServiceGrid } from '@/components/service-grid';
 import { useTranslations } from 'next-intl';
 
@@ -51,6 +52,7 @@ export default function HomePage() {
           description={t('work.description')}
           textAlign="center"
         />
+        <ProjectGrid items={t.raw('work.items')} />
       </section>
     </>
   );
